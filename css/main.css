@@ -1,0 +1,18 @@
+h1 {
+   font-size: xxx-large;
+   color: darkred;
+}
+p {
+   size: A3;
+}
+body {
+   text-align: center;
+   background: url("/img/Weinachten hintergrund.webp") no-repeat center center fixed;
+   webkit-background-size: cover;
+   moz-background-size: cover;
+   o-background-size: cover;
+   background-size: cover;
+
+
+
+}
