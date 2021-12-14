@@ -2,9 +2,11 @@ h1 {
    font-size: xxx-large;
    color: darkred;
 }
-p {
+
+p1 {
    size: A3;
 }
+
 body {
    text-align: center;
    background: url("/img/Weinachten hintergrund.webp") no-repeat center center fixed;
@@ -13,6 +15,8 @@ body {
    o-background-size: cover;
    background-size: cover;
 
+}
 
-
+p2 {
+   font-size: x-large;
 }
