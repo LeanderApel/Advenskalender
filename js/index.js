@@ -27,8 +27,48 @@ let text22 = "Du hast einen Taschenmesser gewonnen!";
 let text23 = "Du hast einen Pullover gewonnen!";
 let text24 = "Du hast eine PS5 gewonnen!";
 
+let image1 = ("../img/tasse.jpg");
+let image2 = ("../img/lockenstab.jpg");
+let image3 = ("../img/Weihnachtssocken.jpg");
+let image4 = ("../img/multi ladekabel.jpg");
+let image5 = ("../img/Adiletten.jpg");
+let image6 = ("../img/Uhr.png");
+let image7 = ("../img/Airpods.jpg");
+let image8 = ("../img/Zahnbürste.jpg");
+let image9 = ("../img/Ring.png");
+let image10 = ("../img/Föhn.jpg");
+let image11 = ("../img/Kerze.jpg");
+let image12 = ("../img/Head Set.jpg");
+let image13 = ("../img/Mixer.jpg");
+let image14 = ("../img/Mütze.jpg");
+let image15 = ("../img/Spiel.jpg");
+let image16 = ("../img/Gläteisen.jpg");
+let image17 = ("../img/Handyhülle.jpg");
+let image18 = ("../img/Grepe Maker.jpg");
+let image19 = ("../img/T-Shirt.jpg");
+let image20 = ("../img/Kette.jpg");
+let image21 = ("../img/Schokolade.jpg");
+let image22 = ("../img/Taschenmesser.jpg");
+let image23 = ("../img/Polover.jpg");
+let image24 = ("../img/PS 5.jpg");
 
-let image1 = ("../img/Geschenk.jpg");
+
+const openNewBackgroundTab = (url) => {
+    const anchor = document.createElement("a");
+    anchor.href = url;
+    document.body.appendChild(anchor);
+    const evt = document.createEvent("MouseEvents");
+
+    evt.initMouseEvent(
+        "click", true, true, window, 0, 0, 0, 0, 0,
+        true, false, false, false, 0, null
+    );
+    anchor.dispatchEvent(evt);
+}
+// Hallo Herr Fricke, diese funktion kann bei ihnen funktionieren muss jedoch aber nicht. sie ist dafür da, das der Link in einen eunen Tab//
+//im hintergrund geöffnet wird. Dies funktionert nur bei älteren Chrome. Sie können dies bei der Zahl 1 Versuchen...//
+// wenn nicht, einach auf den tab zurück gehen.//
+//LG Leander//
 
 
 function tagangabe() {
@@ -48,6 +88,8 @@ function tagangabe() {
         ausgabe = text1;
         console.log(document.getElementById("ausgabetext"));
         document.getElementById("ausgabeText").innerHTML = text1;
+        openNewBackgroundTab("https://www.kaufland.de/product/360430574/");
+
     }
      if (n1 == 2) {
         document.getElementById('bild1').src = image2;
@@ -55,62 +97,163 @@ function tagangabe() {
         ausgabe = text2;
         console.log(document.getElementById("ausgabetext"));
         document.getElementById("ausgabeText").innerHTML = text2;
+        window.open(" https://www.dealbunny.de/atmoko-lockenstab.html");
     }
+
     else if (n1 == 3) {
         document.getElementById('bild1').src = image3;
         console.log(myImg);
         ausgabe = text3;
         console.log(document.getElementById("ausgabetext"));
         document.getElementById("ausgabeText").innerHTML = text3;
-    }
-    else if (n1 == 4) {
+        window.open("https://www.senzaconfini.at/produkt/weihnachtssocken/");
+    } else if (n1 == 4) {
         document.getElementById('bild1').src = image4;
         console.log(myImg);
         ausgabe = text4;
         console.log(document.getElementById("ausgabetext"));
         document.getElementById("ausgabeText").innerHTML = text4;
-    }
-    else if (n1 == 5) {
+        window.open("https://www.vkf-renzel.de/metmaxx-multi-ladekabel-lademeister-businessclass-40-1871-1.html");
+    } else if (n1 == 5) {
         document.getElementById('bild1').src = image5;
         console.log(myImg);
         ausgabe = text5;
         console.log(document.getElementById("ausgabetext"));
         document.getElementById("ausgabeText").innerHTML = text5;
-    }
-    else if (n1 == 6) {
+        window.open("https://www.sportokay.com/hu_de/adidas-adilette-aqua-freizeitsandalen.html");
+    } else if (n1 == 6) {
         document.getElementById('bild1').src = image6;
         console.log(myImg);
         ausgabe = text6;
         console.log(document.getElementById("ausgabetext"));
         document.getElementById("ausgabeText").innerHTML = text6;
-    }
-    else if (n1 == 7) {
+        window.open("https://www.luna.at/kollektion/produkt/0026ws01/");
+    } else if (n1 == 7) {
         document.getElementById('bild1').src = image7;
         console.log(myImg);
         ausgabe = text7;
         console.log(document.getElementById("ausgabetext"));
         document.getElementById("ausgabeText").innerHTML = text7;
-    }
-    else if (n1 == 8) {
+        window.open("https://www.meintrendyhandy.de/shop/apple-airpods-pro-anc-249724p.html");
+    } else if (n1 == 8) {
         document.getElementById('bild1').src = image8;
         console.log(myImg);
         ausgabe = text8;
         console.log(document.getElementById("ausgabetext"));
         document.getElementById("ausgabeText").innerHTML = text8;
-    }
-    else if (n1 == 9) {
+        window.open("https://www.flaconi.de/pflege/oral-b/geniusx-20000/oral-b-geniusx-20000-luxe-edition-elektrische-zahnbuerste.html#sku=80044979-1");
+    } else if (n1 == 9) {
         document.getElementById('bild1').src = image9;
         console.log(myImg);
         ausgabe = text9;
         console.log(document.getElementById("ausgabetext"));
         document.getElementById("ausgabeText").innerHTML = text9;
-    }
-    else if (n1 == 10) {
+        window.open("https://www.bulgari.com/en-hk/341729.html");
+    } else if (n1 == 10) {
         document.getElementById('bild1').src = image10;
         console.log(myImg);
         ausgabe = text10;
         console.log(document.getElementById("ausgabetext"));
         document.getElementById("ausgabeText").innerHTML = text10;
+        window.open("https://www.kaufland.de/product/333063346/");
+    } else if (n1 == 11) {
+        document.getElementById('bild1').src = image11;
+        console.log(myImg);
+        ausgabe = text11;
+        console.log(document.getElementById("ausgabetext"));
+        document.getElementById("ausgabeText").innerHTML = text11;
+        window.open("https://shop.herrnhuter-sterne.de/Geschenksets/Weihnachtskerze::410.html");
+    } else if (n1 == 12) {
+        document.getElementById('bild1').src = image12;
+        console.log(myImg);
+        ausgabe = text12;
+        console.log(document.getElementById("ausgabetext"));
+        document.getElementById("ausgabeText").innerHTML = text12;
+        window.open("https://www.amazon.de/Razer-Kraken-Ultimate-Kopfh%C3%B6rer-Surround/dp/B07YT1KZPN");
+    } else if (n1 == 13) {
+        document.getElementById('bild1').src = image13;
+        console.log(myImg);
+        ausgabe = text13;
+        console.log(document.getElementById("ausgabetext"));
+        document.getElementById("ausgabeText").innerHTML = text13;
+        window.open("https://www.amazon.de/Philips-HR3573-Glasbeh%C3%A4lter-Trinkflasche-sp%C3%BClmaschinenfest/dp/B08447L6Y2");
+    } else if (n1 == 14) {
+        document.getElementById('bild1').src = image14;
+        console.log(myImg);
+        ausgabe = text14;
+        console.log(document.getElementById("ausgabetext"));
+        document.getElementById("ausgabeText").innerHTML = text14;
+        window.open("https://www.amazon.de/infactory-Weihnachtsm%C3%BCtze-LED-Nikolausm%C3%BCtze-leuchtendem-farbwechselnd/dp/B00GHISZNI");
+    } else if (n1 == 15) {
+        document.getElementById('bild1').src = image15;
+        console.log(myImg);
+        ausgabe = text15;
+        console.log(document.getElementById("ausgabetext"));
+        document.getElementById("ausgabeText").innerHTML = text15;
+        window.open(" https://www.amazon.de/Ratchet-Clank-Rift-Apart-PlayStation/dp/B08B44H982");
+    } else if (n1 == 16) {
+        document.getElementById('bild1').src = image16;
+        console.log(myImg);
+        ausgabe = text16;
+        console.log(document.getElementById("ausgabetext"));
+        document.getElementById("ausgabeText").innerHTML = text16;
+        window.open("https://www.amazon.de/Comair-Profi-Gl%C3%A4tteisen-Hollywood-Haargl%C3%A4tter/dp/B008OG42UG");
+    } else if (n1 == 17) {
+        document.getElementById('bild1').src = image17;
+        console.log(myImg);
+        ausgabe = text17;
+        console.log(document.getElementById("ausgabetext"));
+        document.getElementById("ausgabeText").innerHTML = text17;
+        window.open("https://www.amazon.de/elago-iPhone-Silikon-Kompatibel-Handyh%C3%BClle-Lovely-Rosa/dp/B07X8MX3ND");
+    } else if (n1 == 18) {
+        document.getElementById('bild1').src = image18;
+        console.log(myImg);
+        ausgabe = text18;
+        console.log(document.getElementById("ausgabetext"));
+        document.getElementById("ausgabeText").innerHTML = text18;
+        window.open("https://www.amazon.de/Severin-CM-2198-Cr%C3%AApes-schwarz/dp/B002ALSHZC");
+    } else if (n1 == 19) {
+        document.getElementById('bild1').src = image19;
+        console.log(myImg);
+        ausgabe = text19;
+        console.log(document.getElementById("ausgabetext"));
+        document.getElementById("ausgabeText").innerHTML = text19;
+        window.open("https://www.amazon.de/Fruit-Loom-T-Shirt-Valueweight-T/dp/B07CMZMV4J");
+    } else if (n1 == 20) {
+        document.getElementById('bild1').src = image20;
+        console.log(myImg);
+        ausgabe = text20;
+        console.log(document.getElementById("ausgabetext"));
+        document.getElementById("ausgabeText").innerHTML = text20;
+        window.open("https://www.amazon.de/STERLL-Herren-Kette-massivem-Geschenk-Schmuckbox/dp/B01CDFEBZ4");
+    } else if (n1 == 21) {
+        document.getElementById('bild1').src = image21;
+        console.log(myImg);
+        ausgabe = text21;
+        console.log(document.getElementById("ausgabetext"));
+        document.getElementById("ausgabeText").innerHTML = text21;
+        window.open("https://www.sweets-online.com/schokolade/schokoladentafel/milka-scholadentafeln/milka-luflee-schokolade-100g-tafel_1199912020_7717");
+    } else if (n1 == 22) {
+        document.getElementById('bild1').src = image22;
+        console.log(myImg);
+        ausgabe = text22;
+        console.log(document.getElementById("ausgabetext"));
+        document.getElementById("ausgabeText").innerHTML = text22;
+        window.open("https://www.amazon.de/ORSIFOW-Multifunktion-Taschenmesser-Taschenwerkzeug-Schraubendrehe/dp/B07XQCDP6P");
+    } else if (n1 == 23) {
+        document.getElementById('bild1').src = image23;
+        console.log(myImg);
+        ausgabe = text23;
+        console.log(document.getElementById("ausgabetext"));
+        document.getElementById("ausgabeText").innerHTML = text23;
+        window.open("https://www.amazon.de/Lazzboy-Kapuzenpullover-Verdickung-Pullover-Kapuzenpullis/dp/B07ZLM393P");
+    } else if (n1 == 24) {
+        document.getElementById('bild1').src = image24;
+        console.log(myImg);
+        ausgabe = text24;
+        console.log(document.getElementById("ausgabetext"));
+        document.getElementById("ausgabeText").innerHTML = text24;
+        window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ");
     }
 }
 
@@ -126,16 +269,16 @@ function tagangabe() {
         "August","September","Oktober","November","Dezember");
     Tag = new Array ("Mo","Di","Mi","Do","Fr","Sa","So");
 
-    var KSchrArt = "Verdana,Arial"; /* Schriftart Kalenderkopf */
-    var KSchrGroesse = 3;           /* Schriftgroesse 1-7 Kalenderkopf */
-    var KSchrFarbe = "#fafaf9";     /* Schriftfarbe Kalenderkopf */
-    var Khgrund = "#000000";        /* Hintergrundfarbe Kalenderkopf */
-    var TSchrArt = "Verdana,Arial"; /* Schriftart Tagesanzeige */
-    var TSchrGroesse = 3;           /* Schriftgroesse 1-7 Tagesanzeige */
-    var TSchrFarbe = "#000000";     /* Schriftfarbe Tagesanzeige */
-    var Thgrund = "#acbbbb";        /* Hintergrundfarbe Tagesanzeige */
-    var SoFarbe = "#E00000";        /* Schriftfarbe f. Sonntage */
-    var Ahgrund = "#7a2631";        /* Hintergrundfarbe f. heutigen Tag */
+    var KSchrArt = "Verdana,Arial";
+    var KSchrGroesse = 3;
+    var KSchrFarbe = "#fafaf9";
+    var Khgrund = "#000000";
+    var TSchrArt = "Verdana,Arial";
+    var TSchrGroesse = 3;
+    var TSchrFarbe = "#000000";
+    var Thgrund = "#acbbbb";
+    var SoFarbe = "#E00000";
+    var Ahgrund = "#7a2631";
 
     var jetzt = new Date();
     var DieserMonat = jetzt.getMonth() + 1;
