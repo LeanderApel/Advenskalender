@@ -2,6 +2,8 @@ let n1;
 let myImg;
 let ergebnis;
 let ausgabe;
+
+//Gewinne//
 let text1 = "Du hast eine Tasse gewonnen!";
 let text2 = "Du hast einen Lockenstab gewonnen!";
 let text3 = "Du hast Socken gewonnen!";
@@ -27,6 +29,7 @@ let text22 = "Du hast einen Taschenmesser gewonnen!";
 let text23 = "Du hast einen Pullover gewonnen!";
 let text24 = "Du hast eine PS5 gewonnen!";
 
+//Bilder//
 let image1 = ("../img/tasse.jpg");
 let image2 = ("../img/lockenstab.jpg");
 let image3 = ("../img/Weihnachtssocken.jpg");
@@ -53,6 +56,7 @@ let image23 = ("../img/Polover.jpg");
 let image24 = ("../img/PS 5.jpg");
 
 
+
 const openNewBackgroundTab = (url) => {
     const anchor = document.createElement("a");
     anchor.href = url;
@@ -65,20 +69,20 @@ const openNewBackgroundTab = (url) => {
     );
     anchor.dispatchEvent(evt);
 }
-// Hallo Herr Fricke, diese funktion kann bei ihnen funktionieren muss jedoch aber nicht. sie ist dafür da, das der Link in einen eunen Tab//
-//im hintergrund geöffnet wird. Dies funktionert nur bei älteren Chrome. Sie können dies bei der Zahl 1 Versuchen...//
-// wenn nicht, einach auf den tab zurück gehen.//
+// Hallo Herr Fricke, diese Funktion kann bei Ihnen funktionieren, muss sie jedoch nicht. Sie ist dafür da, dass der Link in einem neuen Tab//
+//im Hintergrund geöffnet wird. Dies funktioniert nur bei älteren Chrome. Sie können dies bei der Zahl 1 versuchen...//
+// wenn nicht einfach auf den Tab zurückgehen. Ich habe das jetzt mit einem anderen Button gelöst.//
 //LG Leander//
 
 
-function tagangabe() {
+    function tagangabe() {
 
 
     myImg = document.getElementById('bild1');
     n1 = parseInt(document.getElementById("eingabe").value);
     console.log(n1);
     if (n1 < 0 || n1 > 24) {
-        alert("Der Adventskalendar geht nur von Tag 1 bis 24, du Schwingtitte");
+        alert("Der Adventskalender geht nur von Tag 1 bis 24, du Schwingtitte");
         ergebnis = ("error");
         console.log(n1);
     }
@@ -97,7 +101,6 @@ function tagangabe() {
         ausgabe = text2;
         console.log(document.getElementById("ausgabetext"));
         document.getElementById("ausgabeText").innerHTML = text2;
-        window.open(" https://www.dealbunny.de/atmoko-lockenstab.html");
     }
 
     else if (n1 == 3) {
@@ -106,153 +109,205 @@ function tagangabe() {
         ausgabe = text3;
         console.log(document.getElementById("ausgabetext"));
         document.getElementById("ausgabeText").innerHTML = text3;
-        window.open("https://www.senzaconfini.at/produkt/weihnachtssocken/");
     } else if (n1 == 4) {
         document.getElementById('bild1').src = image4;
         console.log(myImg);
         ausgabe = text4;
         console.log(document.getElementById("ausgabetext"));
         document.getElementById("ausgabeText").innerHTML = text4;
-        window.open("https://www.vkf-renzel.de/metmaxx-multi-ladekabel-lademeister-businessclass-40-1871-1.html");
     } else if (n1 == 5) {
         document.getElementById('bild1').src = image5;
         console.log(myImg);
         ausgabe = text5;
         console.log(document.getElementById("ausgabetext"));
         document.getElementById("ausgabeText").innerHTML = text5;
-        window.open("https://www.sportokay.com/hu_de/adidas-adilette-aqua-freizeitsandalen.html");
     } else if (n1 == 6) {
         document.getElementById('bild1').src = image6;
         console.log(myImg);
         ausgabe = text6;
         console.log(document.getElementById("ausgabetext"));
         document.getElementById("ausgabeText").innerHTML = text6;
-        window.open("https://www.luna.at/kollektion/produkt/0026ws01/");
     } else if (n1 == 7) {
         document.getElementById('bild1').src = image7;
         console.log(myImg);
         ausgabe = text7;
         console.log(document.getElementById("ausgabetext"));
         document.getElementById("ausgabeText").innerHTML = text7;
-        window.open("https://www.meintrendyhandy.de/shop/apple-airpods-pro-anc-249724p.html");
     } else if (n1 == 8) {
         document.getElementById('bild1').src = image8;
         console.log(myImg);
         ausgabe = text8;
         console.log(document.getElementById("ausgabetext"));
         document.getElementById("ausgabeText").innerHTML = text8;
-        window.open("https://www.flaconi.de/pflege/oral-b/geniusx-20000/oral-b-geniusx-20000-luxe-edition-elektrische-zahnbuerste.html#sku=80044979-1");
     } else if (n1 == 9) {
         document.getElementById('bild1').src = image9;
         console.log(myImg);
         ausgabe = text9;
         console.log(document.getElementById("ausgabetext"));
         document.getElementById("ausgabeText").innerHTML = text9;
-        window.open("https://www.bulgari.com/en-hk/341729.html");
     } else if (n1 == 10) {
         document.getElementById('bild1').src = image10;
         console.log(myImg);
         ausgabe = text10;
         console.log(document.getElementById("ausgabetext"));
         document.getElementById("ausgabeText").innerHTML = text10;
-        window.open("https://www.kaufland.de/product/333063346/");
     } else if (n1 == 11) {
         document.getElementById('bild1').src = image11;
         console.log(myImg);
         ausgabe = text11;
         console.log(document.getElementById("ausgabetext"));
         document.getElementById("ausgabeText").innerHTML = text11;
-        window.open("https://shop.herrnhuter-sterne.de/Geschenksets/Weihnachtskerze::410.html");
     } else if (n1 == 12) {
         document.getElementById('bild1').src = image12;
         console.log(myImg);
         ausgabe = text12;
         console.log(document.getElementById("ausgabetext"));
         document.getElementById("ausgabeText").innerHTML = text12;
-        window.open("https://www.amazon.de/Razer-Kraken-Ultimate-Kopfh%C3%B6rer-Surround/dp/B07YT1KZPN");
     } else if (n1 == 13) {
         document.getElementById('bild1').src = image13;
         console.log(myImg);
         ausgabe = text13;
         console.log(document.getElementById("ausgabetext"));
         document.getElementById("ausgabeText").innerHTML = text13;
-        window.open("https://www.amazon.de/Philips-HR3573-Glasbeh%C3%A4lter-Trinkflasche-sp%C3%BClmaschinenfest/dp/B08447L6Y2");
     } else if (n1 == 14) {
         document.getElementById('bild1').src = image14;
         console.log(myImg);
         ausgabe = text14;
         console.log(document.getElementById("ausgabetext"));
         document.getElementById("ausgabeText").innerHTML = text14;
-        window.open("https://www.amazon.de/infactory-Weihnachtsm%C3%BCtze-LED-Nikolausm%C3%BCtze-leuchtendem-farbwechselnd/dp/B00GHISZNI");
     } else if (n1 == 15) {
         document.getElementById('bild1').src = image15;
         console.log(myImg);
         ausgabe = text15;
         console.log(document.getElementById("ausgabetext"));
         document.getElementById("ausgabeText").innerHTML = text15;
-        window.open(" https://www.amazon.de/Ratchet-Clank-Rift-Apart-PlayStation/dp/B08B44H982");
     } else if (n1 == 16) {
         document.getElementById('bild1').src = image16;
         console.log(myImg);
         ausgabe = text16;
         console.log(document.getElementById("ausgabetext"));
         document.getElementById("ausgabeText").innerHTML = text16;
-        window.open("https://www.amazon.de/Comair-Profi-Gl%C3%A4tteisen-Hollywood-Haargl%C3%A4tter/dp/B008OG42UG");
     } else if (n1 == 17) {
         document.getElementById('bild1').src = image17;
         console.log(myImg);
         ausgabe = text17;
         console.log(document.getElementById("ausgabetext"));
         document.getElementById("ausgabeText").innerHTML = text17;
-        window.open("https://www.amazon.de/elago-iPhone-Silikon-Kompatibel-Handyh%C3%BClle-Lovely-Rosa/dp/B07X8MX3ND");
     } else if (n1 == 18) {
         document.getElementById('bild1').src = image18;
         console.log(myImg);
         ausgabe = text18;
         console.log(document.getElementById("ausgabetext"));
         document.getElementById("ausgabeText").innerHTML = text18;
-        window.open("https://www.amazon.de/Severin-CM-2198-Cr%C3%AApes-schwarz/dp/B002ALSHZC");
     } else if (n1 == 19) {
         document.getElementById('bild1').src = image19;
         console.log(myImg);
         ausgabe = text19;
         console.log(document.getElementById("ausgabetext"));
         document.getElementById("ausgabeText").innerHTML = text19;
-        window.open("https://www.amazon.de/Fruit-Loom-T-Shirt-Valueweight-T/dp/B07CMZMV4J");
     } else if (n1 == 20) {
         document.getElementById('bild1').src = image20;
         console.log(myImg);
         ausgabe = text20;
         console.log(document.getElementById("ausgabetext"));
         document.getElementById("ausgabeText").innerHTML = text20;
-        window.open("https://www.amazon.de/STERLL-Herren-Kette-massivem-Geschenk-Schmuckbox/dp/B01CDFEBZ4");
     } else if (n1 == 21) {
         document.getElementById('bild1').src = image21;
         console.log(myImg);
         ausgabe = text21;
         console.log(document.getElementById("ausgabetext"));
         document.getElementById("ausgabeText").innerHTML = text21;
-        window.open("https://www.sweets-online.com/schokolade/schokoladentafel/milka-scholadentafeln/milka-luflee-schokolade-100g-tafel_1199912020_7717");
     } else if (n1 == 22) {
         document.getElementById('bild1').src = image22;
         console.log(myImg);
         ausgabe = text22;
         console.log(document.getElementById("ausgabetext"));
         document.getElementById("ausgabeText").innerHTML = text22;
-        window.open("https://www.amazon.de/ORSIFOW-Multifunktion-Taschenmesser-Taschenwerkzeug-Schraubendrehe/dp/B07XQCDP6P");
     } else if (n1 == 23) {
         document.getElementById('bild1').src = image23;
         console.log(myImg);
         ausgabe = text23;
         console.log(document.getElementById("ausgabetext"));
         document.getElementById("ausgabeText").innerHTML = text23;
-        window.open("https://www.amazon.de/Lazzboy-Kapuzenpullover-Verdickung-Pullover-Kapuzenpullis/dp/B07ZLM393P");
     } else if (n1 == 24) {
         document.getElementById('bild1').src = image24;
         console.log(myImg);
         ausgabe = text24;
         console.log(document.getElementById("ausgabetext"));
         document.getElementById("ausgabeText").innerHTML = text24;
+    }
+}
+
+    function link() {
+    if (n1 == 1) {
+        window.open("https://www.kaufland.de/product/360430574/");
+    } else if (n1 == 2) {
+        window.open(" https://www.dealbunny.de/atmoko-lockenstab.html");
+    }
+    else if (n1 == 3) {
+        window.open("https://www.senzaconfini.at/produkt/weihnachtssocken/");
+    }
+    else if (n1 == 4) {
+        window.open("https://www.vkf-renzel.de/metmaxx-multi-ladekabel-lademeister-businessclass-40-1871-1.html");
+    }
+    else if (n1 == 5) {
+        window.open("https://www.sportokay.com/hu_de/adidas-adilette-aqua-freizeitsandalen.html");
+    }
+    else if (n1 == 6) {
+        window.open("https://www.luna.at/kollektion/produkt/0026ws01/");
+    }
+    else if (n1 == 7) {
+        window.open("https://www.meintrendyhandy.de/shop/apple-airpods-pro-anc-249724p.html");
+    }
+    else if (n1 == 8) {
+        window.open("https://www.flaconi.de/pflege/oral-b/geniusx-20000/oral-b-geniusx-20000-luxe-edition-elektrische-zahnbuerste.html#sku=80044979-1");
+    }
+    else if (n1 == 9) {
+        window.open("https://www.bulgari.com/en-hk/341729.html");
+    }
+    else if (n1 == 10) {
+        window.open("https://www.kaufland.de/product/333063346/");
+    }
+    else if (n1 == 11) {
+        window.open("https://shop.herrnhuter-sterne.de/Geschenksets/Weihnachtskerze::410.html");
+    }
+    else if (n1 == 12) {
+        window.open("https://www.amazon.de/Razer-Kraken-Ultimate-Kopfh%C3%B6rer-Surround/dp/B07YT1KZPN");
+    }
+    else if (n1 == 13) {
+        window.open("https://www.amazon.de/Philips-HR3573-Glasbeh%C3%A4lter-Trinkflasche-sp%C3%BClmaschinenfest/dp/B08447L6Y2");
+    }
+    else if (n1 == 14) {
+        window.open("https://www.amazon.de/infactory-Weihnachtsm%C3%BCtze-LED-Nikolausm%C3%BCtze-leuchtendem-farbwechselnd/dp/B00GHISZNI");
+    }
+    else if (n1 == 15) {
+        window.open(" https://www.amazon.de/Ratchet-Clank-Rift-Apart-PlayStation/dp/B08B44H982");
+    }
+    else if (n1 == 16) {
+        window.open("https://www.amazon.de/Comair-Profi-Gl%C3%A4tteisen-Hollywood-Haargl%C3%A4tter/dp/B008OG42UG");
+    }
+    else if (n1 == 17) {
+        window.open("https://www.amazon.de/elago-iPhone-Silikon-Kompatibel-Handyh%C3%BClle-Lovely-Rosa/dp/B07X8MX3ND");
+    }
+    else if (n1 == 18) {
+        window.open("https://www.amazon.de/Severin-CM-2198-Cr%C3%AApes-schwarz/dp/B002ALSHZC");
+    }
+    else if (n1 == 19) {
+        window.open("https://www.amazon.de/Fruit-Loom-T-Shirt-Valueweight-T/dp/B07CMZMV4J");
+    }
+    else if (n1 == 20) {
+        window.open("https://www.amazon.de/STERLL-Herren-Kette-massivem-Geschenk-Schmuckbox/dp/B01CDFEBZ4");
+    }
+    else if (n1 == 21) {
+        window.open("https://www.sweets-online.com/schokolade/schokoladentafel/milka-scholadentafeln/milka-luflee-schokolade-100g-tafel_1199912020_7717");
+    }
+    else if (n1 == 22) {
+        window.open("https://www.amazon.de/ORSIFOW-Multifunktion-Taschenmesser-Taschenwerkzeug-Schraubendrehe/dp/B07XQCDP6P");
+    }
+    else if (n1 == 23) {
+        window.open("https://www.amazon.de/Lazzboy-Kapuzenpullover-Verdickung-Pullover-Kapuzenpullis/dp/B07ZLM393P");
+    }
+    else if (n1 == 24) {
         window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ");
     }
 }
